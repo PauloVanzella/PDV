@@ -21,5 +21,25 @@ namespace PlayerUI
         {
             this.Close();
         }
+        
+        private Form activeForm = null;
+        
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null) activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            produtoChildForm.Controls.Add(childForm);
+            produtoChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Form2());
+        }
     }
 }
