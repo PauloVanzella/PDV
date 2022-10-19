@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form1 : Form
+    public partial class Home : Form
     {
-        public Form1()
+        public Home()
         {
             InitializeComponent();
             hideSubMenu();
@@ -44,7 +44,7 @@ namespace PlayerUI
         #region MediaSubMenu
         private void button2_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2());
+            openChildForm(new VendaProduto());
             //..
             //your codes
             //..
@@ -84,7 +84,7 @@ namespace PlayerUI
         #region PlayListManagemetSubMenu
         private void button8_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            openChildForm(new CadastroProduto());
             //..
             //your codes
             //..
@@ -156,7 +156,7 @@ namespace PlayerUI
 
         private void btnEqualizer_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form3());
+            openChildForm(new CadastroProduto());
             //..
             //your codes
             //..
@@ -187,6 +187,11 @@ namespace PlayerUI
             panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

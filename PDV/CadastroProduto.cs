@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class Form3 : Form
+    public partial class CadastroProduto : Form
     {
-        public Form3()
+        public CadastroProduto()
         {
             InitializeComponent();
         }
@@ -39,7 +39,17 @@ namespace PlayerUI
 
         private void button9_Click(object sender, EventArgs e)
         {
-            openChildForm(new Form2());
+            openChildForm(new VendaProduto());
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

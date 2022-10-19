@@ -1,6 +1,6 @@
 ﻿namespace PlayerUI
 {
-    partial class Form2
+    partial class VendaProduto
     {
         /// <summary>
         /// Required designer variable.

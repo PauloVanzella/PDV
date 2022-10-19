@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WF_ModerUI;
+
 
 namespace PDV
 {
@@ -56,9 +56,9 @@ namespace PDV
 
         }
 
-        private void AbrirHomeSistema(object obj)
+        private void AbrirHomeSistema(object     obj)
         {
-            Application.Run(new Form1());
+            Application.Run(new Home());
 
 
         }
