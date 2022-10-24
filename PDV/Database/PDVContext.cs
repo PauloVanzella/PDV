@@ -27,7 +27,7 @@ namespace PDV.Models
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseSqlServer("Data Source=DESKTOP-NHQ7A3Q\\SQLEXPRESS;Initial Catalog=PDV;Integrated Security=True");
+                optionsBuilder.UseSqlServer("Data Source=LAPTOP-RDTVJBFV\\SQLEXPRESS;Initial Catalog=PDV;Integrated Security=True");
             }
         }
 

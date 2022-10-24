@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PlayerUI
 {
-    public partial class CadastroProduto : Form
+    public partial class CadastroFornecedor : Form
     {
-        public CadastroProduto()
+        public CadastroFornecedor()
         {
             InitializeComponent();
         }

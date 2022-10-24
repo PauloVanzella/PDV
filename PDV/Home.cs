@@ -93,25 +93,19 @@ namespace PlayerUI
 
         private void button7_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
+            openChildForm(new CadastroCliente());
             hideSubMenu();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
+            openChildForm(new CadastroFornecedor());
             hideSubMenu();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //..
-            //your codes
-            //..
+            openChildForm(new CadastroUsuario());
             hideSubMenu();
         }
         #endregion
