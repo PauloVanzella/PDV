@@ -1,4 +1,5 @@
-﻿using PDV.Models;
+﻿using PDV.Controllers;
+using PDV.Models;
 using PlayerUI;
 using System;
 using System.Collections.Generic;
@@ -33,12 +34,14 @@ namespace PDV
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            Logar logado = new Logar();
+            
             try
             {
-                if (DbContext.Usuarios.Where(u => u.Usuario1 == User.Text && u.Senha == Password.Text).Count() > 0)
+                if (logado.Login(User.Text,Password.Text))
                 {
                     MessageBox.Show("Bem vindo");
-
                     this.Close();
                     T1 = new Thread(AbrirHomeSistema);
                     T1.SetApartmentState(ApartmentState.STA);
