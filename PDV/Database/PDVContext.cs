@@ -107,22 +107,15 @@ namespace PDV.Models
             });
             modelBuilder.Entity<Cliente>(entity =>
             {
-                entity.HasNoKey();
-
-                entity.Property(e => e.Id_Cliente)
-                    .HasMaxLength(10)
-                    .HasColumnName("Id_Cliente")
-                    .IsFixedLength();
+                entity.Property(e => e.CPF)
+                 .HasMaxLength(50)
+                 .IsUnicode(false)
+                 .HasColumnName("CPF");
 
                 entity.Property(e => e.Nome)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("Nome");
-
-                entity.Property(e => e.CPF)
-                    .HasMaxLength(50)
-                    .IsUnicode(false)
-                    .HasColumnName("CPF");
 
                 entity.Property(e => e.DataNascimento)
                     .HasMaxLength(50)
