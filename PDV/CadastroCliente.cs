@@ -42,27 +42,12 @@ namespace PlayerUI
 
         private void button9_Click(object sender, EventArgs e)
         {
-            
+            BuscarCampos();
         }
 
   
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
         {
 
         }
@@ -141,6 +126,8 @@ namespace PlayerUI
             try
             {
                 Cliente cliente = new Cliente();
+                if (!ValidaCPF(CPF.Text))
+                    throw new Exception("CPF invalido");
                 cliente.CPF = CPF.Text;
                 cliente.Nome = Nome.Text;
                 cliente.DataNascimento = ConverterData(DataNascimento.Text);
@@ -200,6 +187,97 @@ namespace PlayerUI
         {
             DateTime dataConvertida = DateTime.Parse(data);
             return dataConvertida;
+        }
+   
+        public void BuscarCampos()
+        {
+            bool encontrado = false;
+            try
+            {
+                using (var repo = new PDVContext())
+                {
+                    IList<Cliente> clientes = repo.Cliente.ToList();
+                    foreach (var item in clientes)
+                    {
+                        if (item.CPF == CPF.Text)
+                        {
+                            item.CPF = CPF.Text;
+                            Nome.Text = item.Nome;
+                            DataNascimento.Text = item.DataNascimento.ToString("dd/MM/yyyy");
+                            encontrado = true;
+
+                            break;
+                        }
+                    }
+                    if (!encontrado)
+                    {
+                        MessageBox.Show("Não foi Possível Encontrar");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public static bool ValidaCPF(string cpf)
+        {
+            int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+            int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
+            string tempCpf;
+            string digito;
+            int soma;
+            int resto;
+            cpf = cpf.Trim();
+            cpf = cpf.Replace(".", "").Replace("-", "");
+            if (cpf.Length != 11)
+                return false;
+            tempCpf = cpf.Substring(0, 9);
+            soma = 0;
+
+            for (int i = 0; i < 9; i++)
+                soma += int.Parse(tempCpf[i].ToString()) * multiplicador1[i];
+            resto = soma % 11;
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+            digito = resto.ToString();
+            tempCpf = tempCpf + digito;
+            soma = 0;
+            for (int i = 0; i < 10; i++)
+                soma += int.Parse(tempCpf[i].ToString()) * multiplicador2[i];
+            resto = soma % 11;
+            if (resto < 2)
+                resto = 0;
+            else
+                resto = 11 - resto;
+            digito = digito + resto.ToString();
+            return cpf.EndsWith(digito);
+        }
+
+        private void CPF_TextChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void CadastroCliente_TextChanged(object sender, EventArgs e)
+        {
+            var formatado = CPF.Text;
+            var cont = 0;
+            List<string> cpfFormatado = new List<string>();
+            CPF.Text = "";
+            foreach (char c in formatado)
+            {
+                cont++;
+                if (cont == 3 || cont == 6 || cont == 9)
+                {
+                    cpfFormatado.Add(".");
+                }
+                cpfFormatado.Add(c.ToString());
+                CPF.Text += c;
+            }
         }
     }
 }
