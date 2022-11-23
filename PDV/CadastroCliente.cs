@@ -92,11 +92,12 @@ namespace PlayerUI
                 using (var repo = new PDVContext())
                 {
                     IList<Cliente> clientes = repo.Cliente.ToList();
+                    var cpfFormatado = String.Join("", CPF.Text.Split('@', '-', '.', ';', '\''));
                     foreach (var item in clientes)
                     {
-                        if (item.CPF == CPF.Text)
+                        if (item.CPF == cpfFormatado)
                         {
-                            item.CPF = CPF.Text;
+                            item.CPF = cpfFormatado;
                             item.Nome = Nome.Text;
                             item.DataNascimento = ConverterData(DataNascimento.Text);
 
@@ -197,11 +198,13 @@ namespace PlayerUI
                 using (var repo = new PDVContext())
                 {
                     IList<Cliente> clientes = repo.Cliente.ToList();
+                    var cpfFormatado =  String.Join("", CPF.Text.Split('@', '-', '.', ';', '\''));
+
                     foreach (var item in clientes)
                     {
-                        if (item.CPF == CPF.Text)
+                        if (item.CPF == cpfFormatado)
                         {
-                            item.CPF = CPF.Text;
+                            item.CPF = cpfFormatado;
                             Nome.Text = item.Nome;
                             DataNascimento.Text = item.DataNascimento.ToString("dd/MM/yyyy");
                             encontrado = true;
@@ -257,26 +260,40 @@ namespace PlayerUI
             return cpf.EndsWith(digito);
         }
 
-        private void CPF_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void CadastroCliente_TextChanged(object sender, EventArgs e)
+ 
+        private void CPF_Leave(object sender, EventArgs e)
         {
             var formatado = CPF.Text;
             var cont = 0;
-            List<string> cpfFormatado = new List<string>();
+            
             CPF.Text = "";
             foreach (char c in formatado)
             {
                 cont++;
-                if (cont == 3 || cont == 6 || cont == 9)
+                if (cont == 4 || cont == 7 )
                 {
-                    cpfFormatado.Add(".");
+                    CPF.Text+=".";
                 }
-                cpfFormatado.Add(c.ToString());
+                if (cont == 10)
+                    CPF.Text += "-";
                 CPF.Text += c;
+            }
+        }
+
+        private void DataNascimento_Leave_1(object sender, EventArgs e)
+        {
+            var cont = 0;
+            var formatado = DataNascimento.Text;
+            DataNascimento.Text = "";
+            foreach (char c in formatado)
+            {
+                cont++;
+                if (cont == 3 || cont == 5)
+                {
+                    DataNascimento.Text += "/";
+                }
+
+                DataNascimento.Text += c;
             }
         }
     }

@@ -215,6 +215,7 @@
             this.CPF.Name = "CPF";
             this.CPF.Size = new System.Drawing.Size(222, 27);
             this.CPF.TabIndex = 3;
+            this.CPF.Leave += new System.EventHandler(this.CPF_Leave);
             // 
             // label4
             // 
@@ -232,6 +233,7 @@
             this.DataNascimento.Name = "DataNascimento";
             this.DataNascimento.Size = new System.Drawing.Size(322, 27);
             this.DataNascimento.TabIndex = 4;
+            this.DataNascimento.Leave += new System.EventHandler(this.DataNascimento_Leave_1);
             // 
             // button1
             // 
