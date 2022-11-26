@@ -1,2 +1,2 @@
 # PDV
-Projeto em andamento, sistema de PDV (Ponto de Venda) em C# com Entity e SQL Server.
+In progress, A point of sale system for small businesses. C#/Entity/SQL Server
