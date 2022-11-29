@@ -48,11 +48,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.produtoChildForm.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.produtoChildForm.Location = new System.Drawing.Point(273, 121);
-            this.produtoChildForm.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.produtoChildForm.Location = new System.Drawing.Point(239, 91);
+            this.produtoChildForm.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.produtoChildForm.Name = "produtoChildForm";
             this.produtoChildForm.RowHeadersWidth = 51;
-            this.produtoChildForm.Size = new System.Drawing.Size(577, 421);
+            this.produtoChildForm.Size = new System.Drawing.Size(505, 316);
             this.produtoChildForm.TabIndex = 9;
             // 
             // label1
@@ -61,10 +61,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(42)))), ((int)(((byte)(83)))));
-            this.label1.Location = new System.Drawing.Point(343, 13);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(300, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(209, 29);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "Cadastro Usuário";
             // 
@@ -76,9 +76,9 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button5.ForeColor = System.Drawing.Color.LightGray;
             this.button5.Location = new System.Drawing.Point(0, 0);
-            this.button5.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(33, 39);
+            this.button5.Size = new System.Drawing.Size(29, 29);
             this.button5.TabIndex = 14;
             this.button5.Text = "X";
             this.button5.UseVisualStyleBackColor = true;
@@ -91,10 +91,10 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button6.ForeColor = System.Drawing.Color.LightGray;
-            this.button6.Location = new System.Drawing.Point(33, 121);
-            this.button6.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button6.Location = new System.Drawing.Point(29, 91);
+            this.button6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 61);
+            this.button6.Size = new System.Drawing.Size(175, 46);
             this.button6.TabIndex = 18;
             this.button6.Text = "Adicionar";
             this.button6.UseVisualStyleBackColor = false;
@@ -106,10 +106,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button7.ForeColor = System.Drawing.Color.LightGray;
-            this.button7.Location = new System.Drawing.Point(33, 192);
-            this.button7.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button7.Location = new System.Drawing.Point(29, 144);
+            this.button7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 61);
+            this.button7.Size = new System.Drawing.Size(175, 46);
             this.button7.TabIndex = 17;
             this.button7.Text = "Excluir";
             this.button7.UseVisualStyleBackColor = false;
@@ -122,10 +122,10 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button8.ForeColor = System.Drawing.Color.LightGray;
-            this.button8.Location = new System.Drawing.Point(650, 552);
-            this.button8.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button8.Location = new System.Drawing.Point(569, 414);
+            this.button8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 61);
+            this.button8.Size = new System.Drawing.Size(175, 46);
             this.button8.TabIndex = 16;
             this.button8.Text = "Alterar";
             this.button8.UseVisualStyleBackColor = false;
@@ -138,10 +138,10 @@
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.LightGray;
-            this.button9.Location = new System.Drawing.Point(442, 552);
-            this.button9.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.button9.Location = new System.Drawing.Point(387, 414);
+            this.button9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 61);
+            this.button9.Size = new System.Drawing.Size(175, 46);
             this.button9.TabIndex = 15;
             this.button9.Text = "Pesquisar";
             this.button9.UseVisualStyleBackColor = false;
@@ -151,9 +151,10 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(344, 133);
+            this.textBox1.Location = new System.Drawing.Point(301, 100);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(501, 27);
+            this.textBox1.Size = new System.Drawing.Size(439, 23);
             this.textBox1.TabIndex = 20;
             // 
             // label2
@@ -161,9 +162,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(289, 136);
+            this.label2.Location = new System.Drawing.Point(253, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 20);
+            this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 21;
             this.label2.Text = "Login:";
             // 
@@ -172,9 +173,9 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ControlDark;
             this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(289, 178);
+            this.label6.Location = new System.Drawing.Point(253, 134);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.Size = new System.Drawing.Size(42, 15);
             this.label6.TabIndex = 24;
             this.label6.Text = "Senha:";
             // 
@@ -182,17 +183,18 @@
             // 
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(347, 175);
+            this.textBox5.Location = new System.Drawing.Point(304, 131);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(498, 27);
+            this.textBox5.Size = new System.Drawing.Size(436, 23);
             this.textBox5.TabIndex = 23;
             // 
             // CadastroUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.ClientSize = new System.Drawing.Size(912, 663);
+            this.ClientSize = new System.Drawing.Size(798, 497);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label2);
@@ -204,9 +206,10 @@
             this.Controls.Add(this.button5);
             this.Controls.Add(this.produtoChildForm);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "CadastroUsuario";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.CadastroUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtoChildForm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

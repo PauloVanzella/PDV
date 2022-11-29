@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.EntityFrameworkCore.Migrations;
+using PDV;
 using PDV.Controllers;
 using PDV.Models;
 
@@ -295,6 +296,11 @@ namespace PlayerUI
 
                 DataNascimento.Text += c;
             }
+        }
+
+        private void CadastroCliente_Load(object sender, EventArgs e)
+        {
+            openChildForm(new CadastroClienteCH());
         }
     }
 }
