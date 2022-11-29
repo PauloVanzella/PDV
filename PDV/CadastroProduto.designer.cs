@@ -290,6 +290,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "CadastroProduto";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.CadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtoChildForm)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();

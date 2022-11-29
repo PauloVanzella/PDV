@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PDV;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -70,6 +71,11 @@ namespace PlayerUI
         private void tableLayoutPanel1_Paint_1(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void CadastroProduto_Load(object sender, EventArgs e)
+        {
+            openChildForm(new CadastroProdutoCH());
         }
     }
 }
