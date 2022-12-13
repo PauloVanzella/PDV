@@ -651,6 +651,7 @@
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.button2.Location = new System.Drawing.Point(795, 521);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(100, 37);
