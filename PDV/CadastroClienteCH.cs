@@ -247,6 +247,16 @@ namespace PDV
                 CPF.Text += c;
             }
         }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
