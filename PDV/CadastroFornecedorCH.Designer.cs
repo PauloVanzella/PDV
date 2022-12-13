@@ -83,6 +83,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
+            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +92,8 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.vScrollBar2);
+            this.panel1.Controls.Add(this.vScrollBar1);
             this.panel1.Controls.Add(this.label25);
             this.panel1.Controls.Add(this.textBox24);
             this.panel1.Controls.Add(this.label14);
@@ -697,6 +701,20 @@
             this.textBox24.Size = new System.Drawing.Size(812, 80);
             this.textBox24.TabIndex = 109;
             // 
+            // vScrollBar1
+            // 
+            this.vScrollBar1.Location = new System.Drawing.Point(828, 278);
+            this.vScrollBar1.Name = "vScrollBar1";
+            this.vScrollBar1.Size = new System.Drawing.Size(14, 80);
+            this.vScrollBar1.TabIndex = 185;
+            // 
+            // vScrollBar2
+            // 
+            this.vScrollBar2.Location = new System.Drawing.Point(828, 379);
+            this.vScrollBar2.Name = "vScrollBar2";
+            this.vScrollBar2.Size = new System.Drawing.Size(14, 80);
+            this.vScrollBar2.TabIndex = 186;
+            // 
             // CadastroFornecedorCH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -770,5 +788,7 @@
         private System.Windows.Forms.TextBox textBox12;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.VScrollBar vScrollBar2;
+        private System.Windows.Forms.VScrollBar vScrollBar1;
     }
 }
