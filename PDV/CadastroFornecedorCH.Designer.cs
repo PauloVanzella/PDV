@@ -615,7 +615,7 @@
             this.checkBox1.Location = new System.Drawing.Point(923, 8);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(68, 25);
-            this.checkBox1.TabIndex = 102;
+            this.checkBox1.TabIndex = 54;
             this.checkBox1.Text = "Ativo:";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
