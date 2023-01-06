@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CPF = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox21 = new System.Windows.Forms.TextBox();
@@ -67,19 +69,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DataNascimento = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.Nome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.groupBox1.Controls.Add(this.textBox20);
+            this.groupBox1.Controls.Add(this.CPF);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
@@ -119,7 +119,7 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.DataNascimento);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Nome);
             this.groupBox1.Controls.Add(this.label2);
@@ -131,6 +131,26 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cliente";
+            // 
+            // CPF
+            // 
+            this.CPF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.CPF.Location = new System.Drawing.Point(527, 73);
+            this.CPF.Name = "CPF";
+            this.CPF.Size = new System.Drawing.Size(229, 32);
+            this.CPF.TabIndex = 101;
+            this.CPF.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(527, 50);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(36, 20);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "CPF:";
             // 
             // textBox5
             // 
@@ -498,14 +518,14 @@
             this.label1.TabIndex = 58;
             this.label1.Text = "Cod. Cliente:";
             // 
-            // textBox1
+            // DataNascimento
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(762, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 32);
-            this.textBox1.TabIndex = 57;
+            this.DataNascimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataNascimento.BackColor = System.Drawing.SystemColors.Window;
+            this.DataNascimento.Location = new System.Drawing.Point(762, 73);
+            this.DataNascimento.Name = "DataNascimento";
+            this.DataNascimento.Size = new System.Drawing.Size(167, 32);
+            this.DataNascimento.TabIndex = 57;
             // 
             // label4
             // 
@@ -539,25 +559,6 @@
             this.label2.Size = new System.Drawing.Size(53, 20);
             this.label2.TabIndex = 56;
             this.label2.Text = "Nome:";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox20.Location = new System.Drawing.Point(527, 73);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(229, 32);
-            this.textBox20.TabIndex = 101;
-            // 
-            // label6
-            // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(527, 50);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 20);
-            this.label6.TabIndex = 100;
-            this.label6.Text = "CPF:";
             // 
             // CadastroClienteCH
             // 
@@ -615,13 +616,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox DataNascimento;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Nome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox CPF;
         private System.Windows.Forms.Label label6;
     }
 }
