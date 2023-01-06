@@ -44,32 +44,32 @@ namespace PlayerUI
         private void button9_Click(object sender, EventArgs e)
         {
             PDV.CadastroClienteCH cadastroClienteCH = new CadastroClienteCH();
-            cadastroClienteCH.BuscarCampos();
+            //cadastroClienteCH.BuscarCampos();
         }
 
 
         private void button6_Click(object sender, EventArgs e)
         {
                 PDV.CadastroClienteCH cadastroClienteCH = new CadastroClienteCH();
-                cadastroClienteCH.AdicionarRegistrosCliente();
+                //cadastroClienteCH.AdicionarRegistrosCliente();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             PDV.CadastroClienteCH cadastroClienteCH = new CadastroClienteCH();
-            cadastroClienteCH.ExcluirCampo();
+            //cadastroClienteCH.ExcluirCampo();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             PDV.CadastroClienteCH cadastroClienteCH = new CadastroClienteCH();
-            cadastroClienteCH.LimparCampos();
+            //cadastroClienteCH.LimparCampos();
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             PDV.CadastroClienteCH cadastroClienteCH = new CadastroClienteCH();
-            cadastroClienteCH.AlterarCampos();
+            //cadastroClienteCH.AlterarCampos();
         }
 
         private void CadastroCliente_Load(object sender, EventArgs e)
